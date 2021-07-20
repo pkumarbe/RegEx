@@ -5,3 +5,10 @@ awk '$0 ~ /n$'/ {print $1} filename.txt' -> prints line end with n line by line
 awk '$0 !~ /n$'/ {print $1} filename.txt' -> prints line end with n lnot matching by above
 print $0 - prints all line/match
 
+Ex - cat file1.txt
+Tall
+Call
+Ball
+Can be used - awk '/[CT]all/ { print $0 }' file1.txt -> will print Tall & Call
+
+awk '/[^CT]all/ { print $0 }' file1.txt -> ^works as negation. It will print Ball
