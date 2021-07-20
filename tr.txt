@@ -1,0 +1,4 @@
+echo "IPAddress" | tr "[a-z]" "[A-Z]"   ->  IPADDRESS
+echo "IPAddress" | tr "d" "D" -> IPADDress
+
+echo "my ID is 73535" | tr -cd [:digit:]  -> 73535
