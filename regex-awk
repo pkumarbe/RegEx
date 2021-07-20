@@ -12,3 +12,10 @@ Ball
 Can be used - awk '/[CT]all/ { print $0 }' file1.txt -> will print Tall & Call
 
 awk '/[^CT]all/ { print $0 }' file1.txt -> ^works as negation. It will print Ball
+
+
+awk '/Tall|Call/ { print $0 }' -> print tall & call 
+
+? - represent the previuos character is zero or more.
+
+awk '/Ta?l/ { print $0 }'
