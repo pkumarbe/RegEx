@@ -1,0 +1,2 @@
+awk '/fun/ {print $1} filename.txt' -> word search
+awk '/f.n/ {print $1} filename.txt' -> . represents any char
