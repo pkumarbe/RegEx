@@ -1,2 +1,5 @@
 awk '/fun/ {print $1} filename.txt' -> word search
 awk '/f.n/ {print $1} filename.txt' -> . represents any char
+awk '/n$'/ {print $1} filename.txt' -> prints line end with n
+awk '$0 ~ /n$'/ {print $1} filename.txt' -> prints line end with n line by line
+awk '$0 !~ /n$'/ {print $1} filename.txt' -> prints line end with n lnot matching by above
